@@ -1,13 +1,13 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 .red-background {
-        background: red;
-        color: white;
+    background: red;
+    color: white;
 }
 
 .yellow-background {
-        background: yellow;
-        color: black;
+    background: yellow;
+    color: black;
 }
 
 html, body {
