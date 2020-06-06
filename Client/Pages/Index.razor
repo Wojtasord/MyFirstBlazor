@@ -5,3 +5,23 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<DismissableAlert Show="@ShowAlert">
+    <span class="oi oi-check mr-2" aria-hidden="true"></span>
+    <strong>First Blazor</strong>
+</DismissableAlert>
+
+<Timer TimeInSeconds="5" Tick="@ToggleAlert" />
+
+<button @onclick="@ToggleAlert">Toggle</button>
+
+@code
+{
+    public bool ShowAlert { get; set; } = true;
+
+    private void ToggleAlert()
+    {
+        Console.WriteLine("+++");
+        ShowAlert = !ShowAlert;
+    }
+}
